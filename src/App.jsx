@@ -12,7 +12,9 @@ function App() {
   nombre: 'Felipe Guerrero',
   rol: ' Aprendiz ADSO',
   foto: fotoPerfil,
-  correo: 'felipeguerrero1103@gmail.com'
+  correo: 'felipeguerrero1103@gmail.com',
+  telefono: '3233776109',
+  lugar: 'Timbio'
 }
 
   return (
@@ -22,7 +24,7 @@ function App() {
         <Sidebar usuario={usuario}/>
         <main className="contenido"> 
           <h2>Bienvenido al Programa {programa}</h2>
-          <Presentacion />
+          <Presentacion usuario={usuario}/>
           <section className="tarjetas">
             <Tarjeta
               icono="⚛️"
