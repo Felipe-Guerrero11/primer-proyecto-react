@@ -1,13 +1,12 @@
-import reactLogo from '../assets/react.svg'
-
-function Tarjeta({icono,titulo, descripcion,horas, destacada}){
-
+function Tarjeta({icono, descripcion, titulo, horas, destacada}){
+    
     return(
-        <article className={destacada ? 'Tarjeta tarjeta-destacada' : 'tarjeta'}>
+        <article className={destacada ? 'tarjeta tarjeta-destacada' : 'tarjeta'}>
             <span className='tarjeta-icono'>{icono}</span>
             <h3>{titulo}</h3>
             <p>{descripcion}</p>
-            <p className="tarjetas-horas"> ⏱️ {horas} horas</p>
+            <span className='tarjeta-horas'>{horas} horas</span>
+
         </article>
     )
 }
